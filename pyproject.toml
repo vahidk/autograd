@@ -1,0 +1,20 @@
+[project]
+name = "autograd"
+version = "1.0.0"
+authors = [{ name = "Vahid Kazemi", email = "vkazemi@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[tool.setuptools]
+py-modules = ["mlt"]
+
+[tool.pytest.init_options]
+minversion = "6.0"
+testpaths = ["tests"]
